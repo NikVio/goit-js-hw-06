@@ -12,3 +12,28 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+
+const makeImagesTransaction = transaction => {
+  const { url, alt } = transaction;
+
+  return `
+  <li class="img-list list">
+  <img class="img" src=${url} alt=${alt} width="320">
+  </img>
+</li>
+  `;
+
+}
+const galleryImg = document.querySelector('.gallery');
+
+const makeImagesTransactionCode = images.map(makeImagesTransaction).join(' ');
+
+galleryImg.insertAdjacentHTML('afterbegin', makeImagesTransactionCode);
+
+
+
+
+
+console.log(makeImagesTransactionCode);
