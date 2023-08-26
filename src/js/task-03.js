@@ -36,4 +36,4 @@ galleryImg.insertAdjacentHTML('afterbegin', makeImagesTransactionCode);
 
 
 
-console.log(makeImagesTransactionCode);
+// console.log(makeImagesTransactionCode);
