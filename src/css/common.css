@@ -27,12 +27,6 @@ button {
   list-style: none;
 }
 
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -44,6 +38,8 @@ img {
 }
 
 .gallery {
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 24px;
 }
